@@ -66,13 +66,6 @@ spec:
         image: microsoft/azure-vote-front:v1
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         env:
         - name: REDIS
           value: "azure-vote-back"
